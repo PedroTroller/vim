@@ -1,0 +1,25 @@
+snippet sg
+public function get${1/\w+\s*/\u$0/}(): ${2:string}
+{
+    return $this->${1};
+}
+
+public function set${1/\w+\s*/\u$0/}(${2:string} $$1)
+{
+    $this->$1 = $$1;
+}
+endsnippet
+
+snippet gt
+public function get${1/\w+\s*/\u$0/}(): ${2:string}
+{
+    return $this->${1};
+}
+endsnippet
+
+snippet st
+public function set${1/\w+\s*/\u$0/}(${2:string} $$1)
+{
+    $this->${1} = $$1;
+}
+endsnippet

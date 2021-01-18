@@ -1,0 +1,41 @@
+snippet feature 
+Feature: ${1:Name}
+	In order to do something
+	As a role
+	I need to be able to do some action
+
+	${2}
+endsnippet
+
+snippet scenario 
+Scenario: ${1:Name}
+	${2}
+endsnippet
+
+snippet outline 
+Scenario: ${1:Name}
+	${2}
+
+	Examples:
+		| ${3:title} |
+endsnippet
+
+snippet given
+Given ${1}
+endsnippet
+
+snippet when
+When ${1}
+endsnippet
+
+snippet then
+Then ${1}
+endsnippet
+
+snippet and
+And ${1}
+endsnippet
+
+snippet but
+But ${1}
+endsnippet
